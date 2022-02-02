@@ -4,6 +4,7 @@ main() {
   calculoImc();
 }
 
+// Programa que calcula o imc
 calculoImc() {
   print("=== Digite seu peso ===");
   int peso = int.parse(stdin.readLineSync() ?? '0');
@@ -16,6 +17,7 @@ calculoImc() {
   imprimirResultado(imc);
 }
 
+// imprime o resultado baseado no imc passado por parâmetro
 imprimirResultado(imc) {
   print("===================");
   if (imc < 18.5) {
